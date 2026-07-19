@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>à¦¸à¦¾à¦§à¦¾à¦°à¦£ à¦œà§à¦žà¦¾à¦¨ à¦¡à§‡à¦Ÿà¦¾ à¦à¦¨à§à¦Ÿà§à¦°à¦¿</title>
+  <title>সাধারণ জ্ঞান ডেটা এন্ট্রি</title>
   <style>
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f0f2f5; }
     
@@ -55,7 +55,8 @@
     }
     .btn-submit:hover { background-color: #45a049; }
     #status { margin-top: 15px; text-align: center; font-weight: bold; }
-     /* মেধা স্বত্ত অংশের ডিজাইন (আলাদা করা হয়েছে) */
+    
+    /* মেধা স্বত্ত অংশের ডিজাইন (আলাদা করা হয়েছে) */
     .footer-credit {
       text-align: center;
       margin-top: 40px;
@@ -76,17 +77,17 @@
 <body>
 
   <div class="top-bar">
-    <div class="menu-icon">â˜°</div>
+    <div class="menu-icon">☰</div>
     <div class="title">GK Entry</div>
     
     <select id="category" class="dropdown-pill">
-      <option value="à¦…à¦°à§à¦¥à¦¨à§€à¦¤à¦¿">à¦…à¦°à§à¦¥à¦¨à§€à¦¤à¦¿</option>
-      <option value="à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶">à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶</option>
-      <option value="à¦†à¦¨à§à¦¤à¦°à§à¦œà¦¾à¦¤à¦¿à¦•">à¦†à¦¨à§à¦¤à¦°à§à¦œà¦¾à¦¤à¦¿à¦•</option>
-      <option value="à¦¨à¦¾à¦°à§€ à¦¸à¦‚à¦•à§à¦°à¦¾à¦¨à§à¦¤">à¦¨à¦¾à¦°à§€ à¦¸à¦‚à¦•à§à¦°à¦¾à¦¨à§à¦¤</option>
-      <option value="à¦ªà¦°à¦¿à¦¬à§‡à¦¶ à¦‡à¦¸à§à¦¯à§">à¦ªà¦°à¦¿à¦¬à§‡à¦¶ à¦‡à¦¸à§à¦¯à§</option>
-      <option value="à¦¬à¦¿à¦œà§à¦žà¦¾à¦¨">à¦¬à¦¿à¦œà§à¦žà¦¾à¦¨</option>
-      <option value="à¦–à§‡à¦²à¦¾à¦§à§à¦²à¦¾">à¦–à§‡à¦²à¦¾à¦§à§à¦²à¦¾</option>
+      <option value="অর্থনীতি">অর্থনীতি</option>
+      <option value="বাংলাদেশ">বাংলাদেশ</option>
+      <option value="আন্তর্জাতিক">আন্তর্জাতিক</option>
+      <option value="নারী সংক্রান্ত">নারী সংক্রান্ত</option>
+      <option value="পরিবেশ ইস্যু">পরিবেশ ইস্যু</option>
+      <option value="বিজ্ঞান">বিজ্ঞান</option>
+      <option value="খেলাধুলা">খেলাধুলা</option>
     </select>
     
     <div class="add-icon">+</div>
@@ -95,27 +96,30 @@
   <div class="form-container">
     <form id="gkForm">
       <div class="input-group">
-        <label for="question" style="color: red;">à¦ªà§à¦°à¦¶à§à¦¨ (à¦²à¦¾à¦² à¦•à¦¾à¦²à¦¿à¦¤à§‡ à¦¸à§‡à¦­ à¦¹à¦¬à§‡):</label>
-        <textarea id="question" rows="3" placeholder="à¦ªà§à¦°à¦¶à§à¦¨ à¦²à¦¿à¦–à§à¦¨..." required></textarea>
+        <label for="question" style="color: red;">প্রশ্ন (লাল কালিতে সেভ হবে):</label>
+        <textarea id="question" rows="3" placeholder="প্রশ্ন লিখুন..." required></textarea>
       </div>
       
       <div class="input-group">
-        <label for="answer" style="color: green;">à¦‰à¦¤à§à¦¤à¦° (à¦¸à¦¬à§à¦œ à¦•à¦¾à¦²à¦¿à¦¤à§‡ à¦¸à§‡à¦­ à¦¹à¦¬à§‡):</label>
-        <textarea id="answer" rows="3" placeholder="à¦‰à¦¤à§à¦¤à¦° à¦²à¦¿à¦–à§à¦¨..." required></textarea>
+        <label for="answer" style="color: green;">উত্তর (সবুজ কালিতে সেভ হবে):</label>
+        <textarea id="answer" rows="3" placeholder="উত্তর লিখুন..." required></textarea>
       </div>
       
-      <button type="submit" class="btn-submit" id="submitBtn">à¦¤à¦¥à§à¦¯ à¦œà¦®à¦¾ à¦¦à¦¿à¦¨</button>
+      <button type="submit" class="btn-submit" id="submitBtn">তথ্য জমা দিন</button>
     </form>
     <div id="status"></div>
   </div>
+
   <!-- মেধা স্বত্ত এবং নাম আলাদা করা হয়েছে -->
-  <div class="footer-credit">
-    <div class="credit-title">&copy; মেধা স্বত্ত</div>
-    <div class="credit-name">Mahmudul Hasan</div>
+  <div style="text-align: center; font-family: 'Segoe UI', Tahoma, sans-serif; color: #444; border-top: 1px solid #ddd; padding-top: 20px; margin-top: 40px; font-size: 13px;">
+  <p style="margin: 0; font-weight: bold; color: #2c3e50;">
+  &copy; 2026 Mahmudul Hasan | সর্বস্বত্ব সংরক্ষিত
+  </p>
+  
   </div>
 
   <script>
-    // à¦à¦–à¦¾à¦¨à§‡ à¦†à¦ªà¦¨à¦¾à¦° à¦—à§à¦—à¦² à¦¶à¦¿à¦Ÿà§‡à¦° Web App URL à¦Ÿà¦¿ à¦¬à¦¸à¦¾à¦¨
+    // এখানে আপনার গুগল শিটের Web App URL টি বসান
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwGgdgiqt27eg8tC2AS1hnRiCU6mM94F9CVzqWScNFPfQ7kOKNN_y_wI3Sp_EH7bmE6/exec';
 
     const form = document.getElementById('gkForm');
@@ -126,7 +130,7 @@
       const status = document.getElementById('status');
       
       submitBtn.disabled = true;
-      submitBtn.innerText = "à¦œà¦®à¦¾ à¦¹à¦šà§à¦›à§‡...";
+      submitBtn.innerText = "জমা হচ্ছে...";
       
       const formData = new FormData();
       formData.append('category', document.getElementById('category').value);
@@ -138,23 +142,23 @@
         .then(result => {
           if(result === "Success") {
             status.style.color = "green";
-            status.innerText = "à¦¤à¦¥à§à¦¯ à¦¸à¦«à¦²à¦­à¦¾à¦¬à§‡ à¦¶à¦¿à¦Ÿà§‡ à¦œà¦®à¦¾ à¦¹à§Ÿà§‡à¦›à§‡!";
+            status.innerText = "তথ্য সফলভাবে শিটে জমা হয়েছে!";
             document.getElementById('question').value = '';
             document.getElementById('answer').value = '';
           } else {
             status.style.color = "red";
-            status.innerText = "à¦•à§‹à¦¥à¦¾à¦“ à¦¸à¦®à¦¸à§à¦¯à¦¾ à¦¹à§Ÿà§‡à¦›à§‡!";
+            status.innerText = "কোথাও সমস্যা হয়েছে!";
           }
           submitBtn.disabled = false;
-          submitBtn.innerText = "à¦¤à¦¥à§à¦¯ à¦œà¦®à¦¾ à¦¦à¦¿à¦¨";
+          submitBtn.innerText = "তথ্য জমা দিন";
           setTimeout(() => { status.innerText = ""; }, 3000);
         })
         .catch(error => {
           console.error('Error!', error.message);
           status.style.color = "red";
-          status.innerText = "à¦‡à¦¨à§à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à¦‚à¦¯à§‹à¦— à¦¬à¦¾ URL à¦šà§‡à¦• à¦•à¦°à§à¦¨!";
+          status.innerText = "ইন্টারনেট সংযোগ বা URL চেক করুন!";
           submitBtn.disabled = false;
-          submitBtn.innerText = "à¦¤à¦¥à§à¦¯ à¦œà¦®à¦¾ à¦¦à¦¿à¦¨";
+          submitBtn.innerText = "তথ্য জমা দিন";
         });
     });
   </script>
